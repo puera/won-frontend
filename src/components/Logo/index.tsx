@@ -1,10 +1,11 @@
+import { HTMLAttributes } from 'react'
 import * as S from './styles'
 
 export type LogoProps = {
   color?: 'white' | 'black'
   size?: 'normal' | 'large'
   hideOnMobile?: boolean
-}
+} & HTMLAttributes<HTMLDivElement>
 
 const Logo = ({
   color = 'white',
