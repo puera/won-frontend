@@ -1,15 +1,16 @@
-import { HTMLAttributes } from 'react'
+import { ReactNode } from 'react'
 import * as S from './styles'
 
 export type LineColorsProps = 'primary' | 'secondary'
 
 export type HeadingProps = {
+  children: ReactNode
   color?: 'white' | 'black'
   lineLeft?: boolean
   lineBottom?: boolean
   lineColor?: LineColorsProps
   size?: 'small' | 'medium'
-} & HTMLAttributes<HTMLHeadElement>
+}
 
 const Heading = ({
   children,

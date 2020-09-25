@@ -10,7 +10,7 @@ export default {
     }
   },
   args: {
-    img: 'https://www.w3schools.com/w3css/img_lights.jpg',
+    img: '/img/red-dead-img.jpg',
     title: 'Defy death',
     subtitle: '<p>Play the new <strong>CrashLands</strong> season </p>',
     buttonLabel: 'Buy now',

@@ -1,4 +1,3 @@
-import { HTMLAttributes } from 'react'
 import styled, { css } from 'styled-components'
 import media, { DefaultBreakpoints } from 'styled-media-query'
 
@@ -7,7 +6,7 @@ type BreakPoint = keyof DefaultBreakpoints
 export type MediaMatchProps = {
   lessThan?: BreakPoint
   greaterThan?: BreakPoint
-} & HTMLAttributes<HTMLDivElement>
+}
 
 const mediaMatchModifiers = {
   lessThan: (size: BreakPoint) => css`
