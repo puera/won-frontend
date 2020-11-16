@@ -1,9 +1,9 @@
-import { Menu2 as MenuIcon } from 'styled-icons/remix-fill'
+import { Menu2 as MenuIcon } from '@styled-icons/remix-fill'
 import {
   ShoppingCart as ShoppingCartIcon,
   Search as SearchIcon,
   Close as CloseIcon
-} from 'styled-icons/material-outlined'
+} from '@styled-icons/material-outlined'
 
 import Logo from '../Logo'
 import * as S from './styles'

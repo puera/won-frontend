@@ -3,7 +3,7 @@ import Slider, { SliderSettings } from 'components/Slider'
 import {
   ArrowBackIos as ArrowLeft,
   ArrowForwardIos as ArrowRight
-} from 'styled-icons/material-outlined'
+} from '@styled-icons/material-outlined'
 import * as S from './styles'
 
 export type GameCardSliderProps = {

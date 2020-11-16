@@ -1,5 +1,5 @@
 import { Meta, Story } from '@storybook/react/types-6-0'
-import { AddShoppingCart } from 'styled-icons/material-outlined'
+import { AddShoppingCart } from '@styled-icons/material-outlined'
 import Button from '.'
 
 export default {
