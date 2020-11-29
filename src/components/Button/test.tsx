@@ -17,6 +17,18 @@ describe('<Button />', () => {
     expect(container.firstChild).toMatchSnapshot()
   })
 
+  it('should render a disable button', () => {
+    renderWithTheme(<Button disabled>Buy now</Button>)
+
+    expect(screen.getByRole('button', { name: /buy now/i })).toHaveStyleRule(
+      'cursor',
+      'not-allowed',
+      {
+        modifier: ':disabled'
+      }
+    )
+  })
+
   it('should render the small size button', () => {
     renderWithTheme(<Button size="small">Buy now</Button>)
 
