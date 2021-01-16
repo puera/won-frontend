@@ -1,12 +1,15 @@
+import Link from 'next/link'
+import Button from 'components/Button'
 import GameItem, { GameItemProps } from 'components/GameItem'
 import * as S from './styles'
 
 export type CartListProps = {
   games?: GameItemProps[]
   total: string
+  hasButton?: boolean
 }
 
-const CartList = ({ games, total }: CartListProps) => (
+const CartList = ({ games, total, hasButton = false }: CartListProps) => (
   <S.Wrapper>
     {!!games &&
       games.map((game) => (
@@ -19,7 +22,14 @@ const CartList = ({ games, total }: CartListProps) => (
       ))}
 
     <S.Footer>
-      Total: <S.Total>{total}</S.Total>
+      {!hasButton && <span>Total:</span>}
+      <S.Total>{total}</S.Total>
+
+      {hasButton && (
+        <Link href="/cart">
+          <Button as="a">Buy it now</Button>
+        </Link>
+      )}
     </S.Footer>
   </S.Wrapper>
 )
