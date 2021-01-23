@@ -35,3 +35,7 @@ yarn-error.log*
 
 public/sw.js
 public/workbox-*.js
+
+#graphql
+src/graphql/generated
+schema.gql
