@@ -26,7 +26,7 @@ describe('<Wishlist />', () => {
       screen.getByRole('heading', { name: /wishlist/i })
     ).toBeInTheDocument()
 
-    expect(screen.getAllByText(/Population Zero/i)).toHaveLength(6)
+    expect(screen.getAllByText(/red dead 2/i)).toHaveLength(6)
 
     expect(screen.getByTestId('Mock Showcase')).toBeInTheDocument()
   })
