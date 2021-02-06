@@ -1,12 +1,13 @@
 import { screen } from '@testing-library/react'
 import { renderWithTheme } from 'utils/tests/helpers'
-import Wishlist from '.'
+import Wishlist, { WishlistTemplateProps } from '.'
 
 import highlightMock from 'components/Highlight/mock'
 import gamesMock from 'components/GameCardSlider/mock'
 
-const props = {
+const props: WishlistTemplateProps = {
   games: gamesMock,
+  recommendedTitle: 'You may like theses games',
   recommendedGames: gamesMock,
   recommendedHighlight: highlightMock
 }
@@ -36,6 +37,7 @@ describe('<Wishlist />', () => {
       <Wishlist
         recommendedGames={gamesMock}
         recommendedHighlight={highlightMock}
+        recommendedTitle="You may like theses games"
       />
     )
 
